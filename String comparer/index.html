@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comparador de Strings</title>
+  <link rel="stylesheet" href="style.css">
   <script src="index.js" defer></script>
 </head>
 <body>
@@ -13,22 +14,26 @@
 
   <form action="">
     
-    <div>
-      <label for="string1">Insira o texto:</label>
-      <input type="text" name="" id="string1" required>
+    <div id="labelArea">
+      <div class='textField'>
+        <label for="string1">Primeiro texto:</label>
+        <br>
+        <textarea name="" id="string1" rows="10" cols="60" required></textarea>
+      </div>
+      <div class='textField'>
+        <label for="string2">Segundo texto:</label>
+        <br>
+        <textarea name="" id="string2" rows="10" cols="60" required></textarea>
+      </div>
     </div>
-  
-    <hr>
-  
-    <div>
-      <label for="string2">Insira o texto:</label>
-      <input type="text" name="" id="string2" required>
+    
+    <div id="buttonArea">
+      <hr>
+      <div id="buttons">
+        <button onclick="compareButton()" class="bt">Comparar</button>
+        <input type="reset" value="Limpar campos" class="bt">
+      </div>
     </div>
-  
-    <br>
-  
-    <button onclick="compareButton()">Comparar</button>
-    <input type="reset" value="Limpar campos">
 
   </form>
 </body>
